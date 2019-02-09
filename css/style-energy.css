@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*specification*/
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #32325d;
+}
+
+button{
+    border-radius: 3px;
+    background-color:  #845cff;
+    box-shadow: -7px 7px 20px 0px rgba(132, 92, 255, 0.2);
+    width: 102px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #32325d;
+}
+/*specification*/
+
+header{
+    background-color: #ffffff;
+    background-image: url("../img-energy/Vectoe.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 140vh;
+}
+
+header .container{
+    width: 100%;
+    height: 100vh;
+    min-height: 430px; 
+    padding: 30px 10% 50px;
+    position: relative;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__link{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-top__link:hover{
+    text-decoration: underline;
+}
+
+.header-top__btn{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.header-banner{
+    width: 400px;
+    position: absolute;
+    left: 10%;
+    bottom: 150px;
+}
+
+.header-banner__title{
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 52px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.header-banner__description{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.start-and-question{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.get-started-btn{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.question-link{
+    font-size: 16px;
+}
+
+
+section.features{
+    padding: 30px 10% 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -180px;
+}
+
+section.features>div{
+    height: 300px;
+    width: 45%;
+}
+
+.feature-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+.feature-title h2{
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.feature-title p{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.feature-item{
+    border-radius: 10px;
+    background-color:  #ffffff;
+    box-shadow: -7px 7px 20px 0px rgba(212, 212, 250, 0.2);
+    padding: 20px 50px;
+    margin-bottom: 30px;
+}
+
+.feature-item__img{
+    background-image: url("../img-energy/feature-sprite.png");
+}
+
+.feature-item h3{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.feature-title p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.feature-like{
+    width: 127px; 
+    height: 127px;
+    background-position:  -206px -10px;
+}
+
+.feature-online{
+    width: 176px; 
+    height: 121px;
+    background-position:  -10px -10px;
+}
+
+.feature-income{
+    width: 133px;
+    height: 127px;
+    background-position:  -10px -151px;
+}
+
+/*section.proof{
+    padding: 30px 10%;
+}*/
+
+.proof-title{
+    text-align: center;
+}
+
+.proof-title h2{
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.proof-title p{
+    width: 65%;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.proof-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg, #ccccff 0%, #f8f7ff 100%);
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.proof-list__item{
+    width: 22%;
+    text-align: center;
+}
+
+.proof-list__item div{
+    width: 80px;
+    height: 80px;
+    margin: 30px auto;
+    background-image: url("../img-energy/proof-sprite.png");
+}
+
+.proof-list__item h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.proof-list__item p{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.proof-list__item div.conversions{
+    background-position: -10px -10px;
+}
+.proof-list__item div.acquisition{
+    background-position: -310px -10px;
+}
+.proof-list__item div.visitor-trust{
+    background-position: -210px -10px;
+}
+.proof-list__item div.influence{
+    background-position: -10px -111px;
+}
+.proof-list__item div.notifications{
+    background-position: -110px -111px;
+}
+.proof-list__item div.journeys{
+    background-position: -210px -111px;
+}
+.proof-list__item div.timing{
+    background-position: -310px -211px;
+}
+.proof-list__item div.visitor-count{
+    background-position: -310px -110px;
+}
+.proof-list__item div.identification{
+    background-position: -10px -211px;
+}
+.proof-list__item div.rules{
+    background-position: -110px -211px;
+}
+.proof-list__item div.mobile-optimized{
+    background-position: -210px -211px;
+}
+.proof-list__item div.translation{
+    background-position: -110px -10px;
+}
+
+
+section.safety, section.opportunity{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.safety-description, .opportunity-description{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.safety-img, .opportunity-img{
+    width: 45%;
+}
+
+.safety-img img, .opportunity-img img{
+    width: 100%;
+}
+
+.safety-description h2, .opportunity-description h2{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.safety-description p, .opportunity-description p{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.safety-description__functions, .opportunity-description__functions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.safety-description__function, .opportunity-description__function{
+    width: 40%;
+}
+
+.safety-description__functions h3, .opportunity-description__functions h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.safety-description__functions p, .opportunity-description__functions p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+section.finances{
+    padding: 30px 10%;
+}
+
+.finances-top, .finances-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.finances-top__description{
+    width: 40%;
+    padding-top: 60px;
+}
+
+.finances-top__description p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.finances-img{
+    width: 55%;
+}
+
+.finances-img img{
+    width: 100%;
+}
+
+.finances-bottom__expences, .finances-bottom__account{
+    width: 45%;
+}
+
+.finances-top h3, .finances-bottom__expences h3, .finances-bottom__account h3{
+    margin-bottom: 20px;
+}
+
+.finances ul{
+    list-style: none;
+}
+
+.finances li{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.finances li:before{
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img-energy/checkbox.png);
+    position: absolute;
+    top: 3px;
+    left: -20px;
+}
+
+section.contacts{
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafaff;
+}
+
+.contacts-description, .contacts-form{
+    width: 45%;
+}
+
+.contacts-form{
+    position: relative;   
+}
+
+.contacts-description h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+
+}
+
+.contacts-form:before{
+    display: block;
+    content: "";
+    width: 88px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-image: url("../img-energy/get-started.png");
+    z-index: 2;
+}
+
+footer{
+    background-color: #212240;
+    width: 100%;
+    padding: 30px 10%;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact{
+    margin-right: 80px;
+}
+
+.footer-contact img{
+    margin-bottom: 50px;
+}
+
+.footer-contact p, .footer-contact a{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-contact>a{
+    display: block;
+    margin-top: 30px;
+}
+
+.footer-contact__social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer-contact__social a{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img-energy/social_sprite.png");
+}
+
+.footer-contact__social a.in{
+    background-position: 64px -10px;
+}
+
+.footer-contact__social a.fb{
+    background-position: -10px -10px;
+}
+
+.footer-contact__social a.tw{
+    background-position: 27px -10px;
+}
+
+.footer-contact__social a.gh{
+    background-position: -38px -10px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.footer-nav__right-nav a, .footer-nav__left-nav a{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.footer-nav__middle-nav{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.footer-nav__middle-nav a{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.footer-bottom p, .footer-bottom__links a{
+    font-size: 12px;
+    color: #555377;
+}
+
+.footer-bottom__links a{
+    margin-left: 20px;
+}
