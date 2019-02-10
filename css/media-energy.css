@@ -1,0 +1,150 @@
+/*large desktop*/
+
+@media (min-width: 1300px){
+	header .container,
+	section.features,
+	.proof-list,
+	section.safety,
+	section.opportunity,
+	section.finances,
+	section.contacts,
+	footer{
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	.header-banner{
+		left: 15%;
+		bottom: 250px;
+	}
+	section.safety, section.opportunity{
+		margin-top: 30px;
+	}
+}
+
+/*laptop and middle desktop*/
+
+@media (max-width: 1299px){
+	body{
+		font-size: 12px;
+	}
+	.finances li:before{
+		top: 10px;
+	}
+	section.safety, section.opportunity{
+		margin-top: 30px;
+	}
+
+}
+
+/*tablets*/
+
+@media (max-width: 900px){
+	body{
+		font-size: 10px;
+	}
+	.header-banner{
+		width: 45%;
+		left: 10%;
+		bottom: 100px;
+	}
+	section.safety, section.opportunity{
+		align-items: center;
+	}
+	.safety-description, .opportunity-description{
+		width: 60%;
+	}
+	.safety-img, .opportunity-img{
+    	width: 35%;
+	}
+	.finances-top{
+		align-items: center;
+	}
+
+	.finances-top__description{
+   		width: 55%;
+   		padding-top: 20px;
+	}
+	.finances-img{
+		width: 40%;
+	}
+	.finances li:before{
+		top: 6px;
+	}
+
+	section.contacts{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}
+
+/*mobile*/
+
+@media (max-width: 700px){
+	.header-top__nav{
+		display: none;
+	}
+	.header-banner{
+		width: 75%;
+	}
+
+	.header-top__mobile-menu-icon{
+    	display: block;
+	}
+	section.features{
+		display: block;
+		margin-top: -360px;
+	}
+	section.features>div{
+		width: 100%;
+	}
+	.proof-list__item{
+	    width: 46%;
+	}
+	.safety-description, .opportunity-description{
+		width: 100%;
+	}
+	.safety-img, .opportunity-img{
+    	display: none;
+	}
+	.finances-top__description{
+   		width: 100%;
+	}
+	.finances-img{
+		display: none;
+	}
+	.finances-bottom{
+		flex-direction: column;
+	}
+	.finances-bottom__expences, .finances-bottom__account{
+    	width: 100%;
+	}
+	section.contacts{
+		flex-direction: column;
+	}
+	.contacts-description, .contacts-form{
+	    width: 100%;
+	}
+	.contacts-form{
+    	margin-top: 20px; 
+	}
+	.footer-top,
+	.footer-bottom{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-contact,
+	.footer-nav
+	{
+		width: 100%;
+		margin: 10px 0;
+		padding: 0;
+	}
+	.footer-bottom__links{
+		margin-top: 10px;
+	}
+	.footer-bottom__links a:first-child{
+		margin-left: 0;
+	}
+}

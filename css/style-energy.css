@@ -16,8 +16,6 @@ button{
     border-radius: 3px;
     background-color:  #845cff;
     box-shadow: -7px 7px 20px 0px rgba(132, 92, 255, 0.2);
-    width: 102px;
-    height: 42px;
     border: none;
     outline: none;
     color: #ffffff;
@@ -28,6 +26,15 @@ a{
     cursor: pointer;
     color: #32325d;
 }
+
+h2{
+    font-size: 3em;
+    line-height: 1.292;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
 /*specification*/
 
 header{
@@ -42,7 +49,7 @@ header{
 header .container{
     width: 100%;
     height: 100vh;
-    min-height: 430px; 
+    min-height: 430px;
     padding: 30px 10% 50px;
     position: relative;
 }
@@ -52,10 +59,13 @@ header .container{
     justify-content: space-between;
     align-items: center;
 }
+.header-top__logo{
+    z-index: 3;
+}
 
 .header-top__link{
     margin-left: 30px;
-    font-size: 14px;
+    font-size: 1.188em;
     font-weight: bold;
 }
 
@@ -64,29 +74,121 @@ header .container{
 }
 
 .header-top__btn{
-    font-size: 14px;
+    font-size: 1.188em;
     font-weight: bold;
     margin-left: 30px;
+    padding: 5px 15px;
 }
 
+/*mobile-menu*/
+.header-top__mobile-menu-icon{
+    display: none;
+    width: 40px;
+    height: 21px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header-top__mobile-menu-icon span{
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+    background: #32325d;
+    position: absolute;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.header-top__mobile-menu-icon span:nth-child(1){
+    top: -3px;
+}
+
+.header-top__mobile-menu-icon span:nth-child(2){
+    top: 5px;
+}
+
+.header-top__mobile-menu-icon span:nth-child(3){
+    top: 5px;
+}
+
+.header-top__mobile-menu-icon span:nth-child(4){
+    top: 13px;
+}
+
+.open .header-top__mobile-menu-icon span:nth-child(1){
+    top: 12px;
+    width: 0%;
+    left: 50%; 
+}
+
+.open .header-top__mobile-menu-icon span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.open .header-top__mobile-menu-icon span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+.open .header-top__mobile-menu-icon span:nth-child(4){
+    width: 0%;
+    top: 12px;
+    left: 50%;
+}
+
+.header-top__mobile-menu-links{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-bottom: 30px;
+    opacity: 0;
+}
+
+.header-top__mobile-menu-links a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 2em;
+}
+
+.header-top__mobile-menu-links button{
+    display: block;
+    font-size: 2em;
+    margin: 10px auto;
+}
+
+.open .header-top__mobile-menu-links{
+    opacity: 1;
+}
+
+
+/*end mobile-menu*/
+
 .header-banner{
-    width: 400px;
+    width: 30%;
     position: absolute;
     left: 10%;
     bottom: 150px;
 }
 
 .header-banner__title{
-    font-size: 41px;
+    font-size: 3em;
     font-weight: bold;
-    line-height: 52px;
+    line-height: 1.292;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 .header-banner__description{
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.438em;
+    line-height: 1.391;
     text-align: justify;
     margin-bottom: 20px;
 }
@@ -99,13 +201,14 @@ header .container{
 
 .get-started-btn{
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 0.938em;
+    font-weight: 700;
     margin-right: 40px;
+    padding: 5px 10px;
 }
 
 .question-link{
-    font-size: 16px;
+    font-size: 1.188em;
 }
 
 
@@ -114,11 +217,11 @@ section.features{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: -180px;
+    margin-top: -160px;
 }
 
 section.features>div{
-    height: 300px;
+    min-height: 300px;
     width: 45%;
 }
 
@@ -130,15 +233,12 @@ section.features>div{
 }
 
 .feature-title h2{
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 .feature-title p{
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.438em;
+    line-height: 1.391;
 }
 
 .feature-item{
@@ -154,16 +254,15 @@ section.features>div{
 }
 
 .feature-item h3{
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.875em;
     letter-spacing: 1px;
     margin-bottom: 10px;
     margin-top: 10px
 }
 
-.feature-title p{
-    font-size: 14px;
-    line-height: 18px;
+.feature-item p{
+    font-size: 1.125em;
+    line-height: 1.389;
 }
 
 .feature-like{
@@ -184,25 +283,17 @@ section.features>div{
     background-position:  -10px -151px;
 }
 
-/*section.proof{
-    padding: 30px 10%;
-}*/
-
 .proof-title{
     text-align: center;
 }
 
-.proof-title h2{
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2px;
-}
+
 
 .proof-title p{
     width: 65%;
     margin: 30px auto;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.438em;
+    line-height: 1.391;
 }
 
 .proof-list{
@@ -227,14 +318,16 @@ section.features>div{
 }
 
 .proof-list__item h3{
-    font-size: 18px;
+    font-size: 1.25em;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 .proof-list__item p{
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.563;
 }
 
 .proof-list__item div.conversions{
@@ -278,7 +371,7 @@ section.features>div{
 section.safety, section.opportunity{
     display: flex;
     justify-content: space-between;
-    padding: 60px 10%;
+    padding: 0 10%;
 }
 
 .safety-description, .opportunity-description{
@@ -297,14 +390,13 @@ section.safety, section.opportunity{
     width: 100%;
 }
 
-.safety-description h2, .opportunity-description h2{
-    font-size: 22px;
-    letter-spacing: 2px;
-}
 
 .safety-description p, .opportunity-description p{
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1.438em;
+    line-height: 1.391;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .safety-description__functions, .opportunity-description__functions{
@@ -317,17 +409,23 @@ section.safety, section.opportunity{
 }
 
 .safety-description__functions h3, .opportunity-description__functions h3{
-    font-size: 20px;
+    font-size: 1.875em;
     letter-spacing: 1px;
+    line-height: 2.067;
+    font-weight: 300;
 }
 
 .safety-description__functions p, .opportunity-description__functions p{
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1em;
+    line-height: 1.563;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 section.finances{
-    padding: 30px 10%;
+    padding: 0 10%;
+    padding-bottom: 30px;
 }
 
 .finances-top, .finances-bottom{
@@ -341,9 +439,13 @@ section.finances{
     padding-top: 60px;
 }
 
+
 .finances-top__description p{
     margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 1.438em;
+    font-weight: 300;
+    line-height: 1.391;
 }
 
 .finances-img{
@@ -360,6 +462,10 @@ section.finances{
 
 .finances-top h3, .finances-bottom__expences h3, .finances-bottom__account h3{
     margin-bottom: 20px;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 2.067;
+    letter-spacing: 2px;
 }
 
 .finances ul{
@@ -370,6 +476,9 @@ section.finances{
     position: relative;
     margin-left: 20px;
     margin-bottom: 5px;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 2.1;
 }
 
 .finances li:before{
@@ -379,7 +488,7 @@ section.finances{
     height: 15px;
     background-image: url(../img-energy/checkbox.png);
     position: absolute;
-    top: 3px;
+    top: 12px;
     left: -20px;
 }
 
@@ -396,12 +505,18 @@ section.contacts{
 }
 
 .contacts-form{
-    position: relative;   
+    position: relative;  
 }
 
 .contacts-description h2{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.contacts-description p{
+    font-size: 1.438em;
+    font-weight: 300;
+    line-height: 3.043;
 }
 
 input[type="email"]{
@@ -413,7 +528,8 @@ input[type="email"]{
     background: #ffffff;
     position: relative;
     z-index: 1;
-
+    font-size: 1.438em;
+    font-weight: 300;
 }
 
 .contacts-form:before{
@@ -449,8 +565,9 @@ footer{
 
 .footer-contact p, .footer-contact a{
     color: #ffffff;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.875;
 }
 
 .footer-contact>a{
@@ -497,7 +614,8 @@ footer{
     display: block;
     color: #ffffff;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 1em;
+    font-weight: 300;
 }
 
 .footer-nav__middle-nav{
@@ -509,7 +627,8 @@ footer{
     display: block;
     color: #ffffff;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .footer-bottom{
@@ -519,7 +638,8 @@ footer{
 }
 
 .footer-bottom p, .footer-bottom__links a{
-    font-size: 12px;
+    font-size: 1em;
+    font-weight: 300;
     color: #555377;
 }
 
